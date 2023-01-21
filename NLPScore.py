@@ -58,7 +58,6 @@ def compute_f1(prediction, truth):
 
 # BLEU Score : 1,2,3,4-gram의 기하평균 * 길이 패널티(bp)
 def compute_bleu(prediction, truth, weights:list):
-    print(weights)
     assert len(weights) == 4, "weights를 4개 입력해주세요."
     assert sum(weights) == 1, "weights의 합이 1이 되도록 설정해주세요."
     BLEUScore = 0
